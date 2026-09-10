@@ -1,6 +1,6 @@
 # react-flow-advanced-best-practices
 
-基于官方资料和当前项目版本，处理 React Flow 的复杂节点、布局、性能和迁移。
+为节点式编辑器的架构、自定义节点、连线、布局、性能、测试和可访问性提供实现指导。
 
 完整执行规则见 [SKILL.md](SKILL.md)。
 
