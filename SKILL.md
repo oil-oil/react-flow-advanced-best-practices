@@ -1,12 +1,6 @@
 ---
 name: react-flow-advanced-best-practices
-description: >
-  Expert-level React Flow (@xyflow/react) guidance covering architecture, performance,
-  TypeScript typing, testing, accessibility, computing flows, SSR/SSG, multiplayer,
-  whiteboard, layout strategy, custom nodes/edges, handle connections, drag-and-drop,
-  migration, and version-aware audits. Use when asked about React Flow / xyflow
-  best practices, advanced patterns, performance tuning, custom node/edge design,
-  controlled vs uncontrolled flows, or any non-trivial React Flow implementation.
+description: "基于官方来源与项目实际版本，为 React Flow（@xyflow/react）的架构、性能、TypeScript、自定义节点与边、布局、连接、迁移、测试和可访问性提供建议与实现。用户要求非简单的 React Flow 开发或评审时使用。不用于无 React Flow 的一般 React 页面、普通流程图绘制或无关前端修改。"
 ---
 
 # React Flow Advanced Best Practices
@@ -18,10 +12,10 @@ Skip beginner setup unless explicitly requested.
 
 ### 1) Refresh official sources
 
-Run from the skill root directory:
+通过脚本绝对路径运行。默认缓存写入 Skill 的 references 目录；只读安装或不希望修改 Skill 时，用 `--output-md` 与 `--output-json` 指定任务目录，并在后续读取该目录的快照。
 
 ```bash
-python3 "$(dirname "$0")/scripts/sync_react_flow_sources.py"
+python3 "<当前 Skill 绝对目录>/scripts/sync_react_flow_sources.py"
 ```
 
 Outputs:
